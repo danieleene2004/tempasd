@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--NOME DELLA SIMULAZIONE CON UNA CHIAMATA HTTP-->
+		<title>Simulazione</title>
+		<script type="module" crossorigin src="/assets/index-bWgwmEb9.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-Q7i4Fpj3.css">
+	</head>
+	<body>
+			<h1 id="simname" style="z-index: 1; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 40px;">
+				Nome Simulazione <br>
+				<span style="font-size: 50%; margin-left: 20px;">Owner: <span id="owner">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px;">Created on: <span id="creation">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px">Time: <span id="time">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px">Production: <span id="power">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px">Weather: <span id="weather">UNKNOWN</span></span><br>
+			</h1>
+			<br>
+			<br>
+		<div style="margin-top: 20.5%;">
+			<div style="width: 400px;">
+				<button style="--clr:#00ffff" id="solarPanel"><span>Solar Panel</span><i></i></button>
+				<button style="--clr:#ff0000" id="solarPanelRemove"><span>Remove Solar Panel</span><i></i></button>
+			</div> <br>
+			<div style="width: 400px;">
+				<button style="--clr:#00ff00" class="dropdown" id="building"><span>Building</span><i></i></button>
+				<h1 style="z-index: 1;" class="dropdown-content">stuff</h1>
+				<button style="--clr:#ff0000" id="buildingRemove"><span>Remove Building</span><i></i></button>
+			</div>
+		</div>
+		<canvas id="artifactCanvas"></canvas>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--NOME DELLA SIMULAZIONE CON UNA CHIAMATA HTTP-->
+		<title>Simulazione</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="main.ts"></script>
+	</head>
+	<body>
+			<h1 id="simname" style="z-index: 1; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 40px;">
+				Nome Simulazione <br>
+				<span style="font-size: 50%; margin-left: 20px;">Owner: <span id="owner">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px;">Created on: <span id="creation">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px">Time: <span id="time">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px">Production: <span id="power">UNKNOWN</span></span><br>
+				<span style="font-size: 50%; margin-left: 20px">Weather: <span id="weather">UNKNOWN</span></span><br>
+			</h1>
+			<br>
+			<br>
+		<div style="margin-top: 20.5%;">
+			<div style="width: 400px;">
+				<button style="--clr:#00ffff" id="solarPanel"><span>Solar Panel</span><i></i></button>
+				<button style="--clr:#ff0000" id="solarPanelRemove"><span>Remove Solar Panel</span><i></i></button>
+			</div> <br>
+			<div style="width: 400px;">
+				<div style="display: flex;">
+					<div style="width: fit-content; text-align: center;">
+						<h1 style="font-size: 90%; margin-left: 20px; position:relative; z-index: 1">Width</h1>
+						<input style="position:relative; z-index: 1;" type="dude" name="" id="widthy">
+					</div>
+					<div style="width: fit-content; text-align: center;">
+						<h1 style="font-size: 90%; margin-left: 20px; position:relative; z-index: 1">Depth</h1>
+						<input style="position:relative; z-index: 1;" type="dude" name="" id="depthy">
+					</div>
+					<div style="width: fit-content; text-align: center;">
+						<h1 style="font-size: 90%; margin-left: 20px; position:relative; z-index: 1">Floors</h1>
+						<input style="position:relative; z-index: 1;" type="dude" name="" id="floory">
+					</div>
+				</div>
+				<button style="--clr:#00ff00" id="buildingConfirm">
+					<span>Place Building</span>
+					<i></i>
+				</button>
+				<button style="--clr:#ff0000" id="buildingRemove"><span>Remove Building</span><i></i></button>
+			</div>
+		</div>
+		<canvas id="artifactCanvas"></canvas>
+	</body>
+</html>
